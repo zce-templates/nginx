@@ -1,0 +1,41 @@
+{
+  "name": "@zce-templates/nginx",
+  "version": "0.1.0",
+  "description": "A template for generating nginx reverse proxy config with ssl.",
+  "keywords": [
+    "nginx",
+    "zce-templates",
+    "zce-cli",
+    "zce"
+  ],
+  "homepage": "https://github.com/zce-templates/nginx#readme",
+  "bugs": {
+    "url": "https://github.com/zce-templates/nginx/issues"
+  },
+  "license": "MIT",
+  "author": "zce <w@zce.me> (https://zce.me/)",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zce-templates/nginx.git"
+  },
+  "scripts": {
+    "test": "standard --fix && ava --verbose"
+  },
+  "devDependencies": {
+    "ava": "^1.0.0-beta.4",
+    "mock-prompt": "^0.1.2",
+    "standard": "^11.0.1",
+    "zce-cli": "^0.2.0-alpha.6"
+  },
+  "ava": {
+    "files": [
+      "test/*.test.js"
+    ]
+  },
+  "standard": {
+    "ignore": [
+      "template"
+    ]
+  }
+}
